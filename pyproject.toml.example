@@ -1,0 +1,8 @@
+[...] Informações padrão do `pyproject.toml` [...]
+
+[tool.isort]
+profile = 'black'
+
+[tool.taskipy.tasks]
+tests = "pytest -v"
+docs = "mkdocs serve"
