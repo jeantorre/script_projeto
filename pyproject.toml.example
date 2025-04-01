@@ -2,6 +2,24 @@
 
 [tool.isort]
 profile = 'black'
+line_length = 89
+skip_gitignore = true
+
+[tool.black]
+line-length = 89
+target-version = ['py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.venv
+  | _build
+  | build
+  | dist
+)/
+'''
 
 [tool.taskipy.tasks]
 tests = "pytest -v"
