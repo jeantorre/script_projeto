@@ -33,7 +33,7 @@ repos:
         types_or: [python, pyi, jupyter]
         additional_dependencies: [".[jupyter]"]
 -   repo: https://github.com/pycqa/isort
-    rev: 6.0.1
+    rev: 6.1.0
     hooks:
     -   id: isort
         name: isort (python)
